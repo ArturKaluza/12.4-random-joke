@@ -10,6 +10,7 @@ button.addEventListener('click', function(){
 })
 
 function getJoke() {
+  paragraph.innerHTML = "<div class='spinner'></div>";
   const xhr = new XMLHttpRequest();
   xhr.open('GET', url);
   xhr.addEventListener('load', function(){
